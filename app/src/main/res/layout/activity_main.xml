@@ -19,4 +19,17 @@
         android:layout_marginTop="10dp"
         android:text="查看Excel文件" />
 
+    <Button
+        android:id="@+id/btn_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查看Word文件" />
+
+    <Button
+        android:id="@+id/btn_ppt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="查看PPT文件" />
+
 </LinearLayout>

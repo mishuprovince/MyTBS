@@ -18,6 +18,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btn_pdf,btn_excel;
     private String pdfUrl = "http://www.blueerdos.top/dwz/Public/upload/123.pdf";
     private String excelUrl = "http://www.blueerdos.top/dwz/Public/upload/345.xlsx";
+    private String wordUrl = "http://www.blueerdos.top/dwz/Public/upload/567.pptx";
+    private String pptUrl = "http://www.blueerdos.top/dwz/Public/upload/789.pptx";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +50,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent2.putExtra("filePath",excelUrl);
                 startActivity(intent2);
                 break;
+            case R.id.btn_word:
+                Intent intent3 = new Intent(MainActivity.this,FileDisplayActivity.class);
+                intent3.putExtra("filePath",wordUrl);
+                startActivity(intent3);
+                break;
+            case R.id.btn_ppt:
+                Intent intent4 = new Intent(MainActivity.this,FileDisplayActivity.class);
+                intent4.putExtra("filePath",pptUrl);
+                startActivity(intent4);
+                break;
+
         }
     }
 
